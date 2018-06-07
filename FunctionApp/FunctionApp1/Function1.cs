@@ -16,6 +16,7 @@ namespace FunctionApp1
             log.Info("Function2");
             log.Info("========");
             log.Info("C# HTTP trigger function processed a request.");
+            log.Info("This is just some more log.");
 
             // parse query parameter
             string name = req.GetQueryNameValuePairs() .FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0).Value;
