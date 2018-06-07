@@ -13,7 +13,7 @@ namespace FunctionApp1
         [FunctionName("MySuperFunction")]
         public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
         {
-            log.Info("Function");
+            log.Info("Function2");
             log.Info("========");
             log.Info("C# HTTP trigger function processed a request.");
 
