@@ -31,3 +31,4 @@
 *.out
 *.app
 /FunctionApp/.vs/FunctionApp/v15
+*.dtbcache

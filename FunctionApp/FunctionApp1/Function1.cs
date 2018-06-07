@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -18,7 +19,7 @@ namespace FunctionApp1
             log.Info("C# HTTP trigger function processed a request.");
 
             // parse query parameter
-            string name = req.GetQueryNameValuePairs() .FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0).Value;
+            string name = req.GetQueryNameValuePairs() .FirstOrDefault(q => string.Compare(q.Key, "name", StringComparison.OrdinalIgnoreCase) == 0).Value;
 
             if (name == null)
             {
